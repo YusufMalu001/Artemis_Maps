@@ -1,0 +1,20 @@
+{
+  "name": "artemis_maps",
+  "version": "1.0.0",
+  "description": "Artemis Maps is an open-source mapping library that integrates seamlessly with React.",
+  "homepage": "https://github.com/YusufMalu001/Artemis_Maps#readme",
+  "bugs": {
+    "url": "https://github.com/YusufMalu001/Artemis_Maps/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YusufMalu001/Artemis_Maps.git"
+  },
+  "license": "ISC",
+  "author": "Yusuf Malu Bhai Wala",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
