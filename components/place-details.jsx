@@ -1,14 +1,8 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
-import { X, Navigation, Phone, Globe, Star } from "lucide-react"
-import type { google } from "google-maps"
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { X, Navigation, Phone, Globe, Star } from "lucide-react";
 
-interface PlaceDetailsProps {
-  place: google.maps.places.PlaceResult
-  onClose: () => void
-}
-
-export function PlaceDetails({ place, onClose }: PlaceDetailsProps) {
+export function PlaceDetails({ place, onClose }) {
   return (
     <Card className="absolute left-4 bottom-4 w-80">
       <CardHeader className="flex flex-row items-center justify-between">
@@ -23,7 +17,9 @@ export function PlaceDetails({ place, onClose }: PlaceDetailsProps) {
             <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
             <span>{place.rating}</span>
             {place.user_ratings_total && (
-              <span className="text-sm text-muted-foreground">({place.user_ratings_total} reviews)</span>
+              <span className="text-sm text-muted-foreground">
+                ({place.user_ratings_total} reviews)
+              </span>
             )}
           </div>
         )}
@@ -42,13 +38,17 @@ export function PlaceDetails({ place, onClose }: PlaceDetailsProps) {
         {place.website && (
           <div className="flex items-center gap-2">
             <Globe className="h-4 w-4" />
-            <a href={place.website} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
+            <a
+              href={place.website}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-600 hover:underline"
+            >
               Website
             </a>
           </div>
         )}
       </CardContent>
     </Card>
-  )
+  );
 }
-

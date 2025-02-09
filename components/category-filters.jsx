@@ -1,8 +1,8 @@
-"use client"
+"use client";
 
-import { Button } from "@/components/ui/button"
-import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area"
-import { UtensilsCrossed, Building2, Palmtree, Building, Bus, ParkingMeterIcon as Parking } from "lucide-react"
+import { Button } from "@/components/ui/button";
+import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
+import { UtensilsCrossed, Building2, Palmtree, Building, Bus, ParkingMeterIcon as Parking } from "lucide-react";
 
 const categories = [
   { name: "Restaurants", icon: UtensilsCrossed },
@@ -11,7 +11,7 @@ const categories = [
   { name: "Museums", icon: Building },
   { name: "Transit", icon: Bus },
   { name: "Parking", icon: Parking },
-]
+];
 
 export function CategoryFilters() {
   return (
@@ -30,6 +30,5 @@ export function CategoryFilters() {
       </div>
       <ScrollBar orientation="horizontal" />
     </ScrollArea>
-  )
+  );
 }
-

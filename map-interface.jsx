@@ -1,7 +1,7 @@
-"use client"
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area"
+"use client";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
 import {
   Search,
   Menu,
@@ -14,8 +14,8 @@ import {
   Palmtree,
   Building,
   Bus,
-  ParkingMeterIcon as Parking,
-} from "lucide-react"
+  ParkingMeter as Parking,
+} from "lucide-react";
 
 export default function MapInterface() {
   return (
@@ -100,6 +100,5 @@ export default function MapInterface() {
         </div>
       </div>
     </div>
-  )
+  );
 }
-

@@ -1,36 +1,31 @@
-"use client"
+"use client";
 
-import { useRef, useEffect } from "react"
-import { Input } from "@/components/ui/input"
-import { Button } from "@/components/ui/button"
-import { Search, Menu, MapPin } from "lucide-react"
+import { useRef, useEffect } from "react";
+import { Input } from "@/components/ui/input";
+import { Button } from "@/components/ui/button";
+import { Search, Menu, MapPin } from "lucide-react";
 
-interface SearchBarProps {
-  onSearchResults: (results: google.maps.places.PlaceResult[]) => void
-  mapInstance: google.maps.Map | null
-}
-
-export function SearchBar({ onSearchResults, mapInstance }: SearchBarProps) {
-  const searchBoxRef = useRef<google.maps.places.SearchBox>()
-  const inputRef = useRef<HTMLInputElement>(null)
+export function SearchBar({ onSearchResults, mapInstance }) {
+  const searchBoxRef = useRef(null);
+  const inputRef = useRef(null);
 
   useEffect(() => {
-    if (!inputRef.current || !mapInstance || !window.google) return
+    if (!inputRef.current || !mapInstance || !window.google) return;
 
-    const searchBox = new window.google.maps.places.SearchBox(inputRef.current)
-    searchBoxRef.current = searchBox
+    const searchBox = new window.google.maps.places.SearchBox(inputRef.current);
+    searchBoxRef.current = searchBox;
 
     searchBox.addListener("places_changed", () => {
-      const places = searchBox.getPlaces()
+      const places = searchBox.getPlaces();
       if (places) {
-        onSearchResults(places)
+        onSearchResults(places);
       }
-    })
+    });
 
     return () => {
-      window.google.maps.event.clearInstanceListeners(searchBox)
-    }
-  }, [mapInstance, onSearchResults])
+      window.google.maps.event.clearInstanceListeners(searchBox);
+    };
+  }, [mapInstance, onSearchResults]);
 
   return (
     <div className="p-2 bg-white shadow-sm">
@@ -54,6 +49,6 @@ export function SearchBar({ onSearchResults, mapInstance }: SearchBarProps) {
         </div>
       </div>
     </div>
-  )
+  );
 }
 

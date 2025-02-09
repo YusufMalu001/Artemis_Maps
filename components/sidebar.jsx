@@ -1,5 +1,5 @@
-import { Button } from "@/components/ui/button"
-import { Menu, Bookmark, Clock } from "lucide-react"
+import { Button } from "@/components/ui/button";
+import { Menu, Bookmark, Clock } from "lucide-react";
 
 export function Sidebar() {
   return (
@@ -16,6 +16,7 @@ export function Sidebar() {
         </Button>
       </div>
     </div>
-  )
+  );
 }
+
 
