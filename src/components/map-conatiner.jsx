@@ -1,11 +1,11 @@
 "use client"
 
 import { useState } from "react"
-import { Sidebar } from "@/components/sidebar"
-import { SearchBar } from "@/components/search-bar"
-import { CategoryFilters } from "@/components/category-filters"
-import { MapComponent } from "@/components/map"
-import { PlaceDetails } from "@/components/place-details"
+import { Sidebar } from "@/src/app/components/sidebar"
+import { SearchBar } from "@/src/app/components/search-bar"
+import { CategoryFilters } from "@/src/app/components/category-filters"
+import { MapComponent } from "@/src/app/components/map"
+import { PlaceDetails } from "@/src/app/components/place-details"
 import { useLoadScript } from "@react-google-maps/api"
 
 const libraries = ["places"]
