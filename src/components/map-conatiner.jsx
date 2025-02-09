@@ -6,7 +6,7 @@ import { SearchBar } from "@/src/app/components/search-bar"
 import { CategoryFilters } from "@/src/app/components/category-filters"
 import { MapComponent } from "@/src/app/components/map"
 import { PlaceDetails } from "@/src/app/components/place-details"
-import { useLoadScript } from "@react-google-maps/api"
+import { GoogleMap, LoadScript } from "@react-google-maps/api";
 
 const libraries = ["places"]
 

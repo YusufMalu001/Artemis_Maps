@@ -1,7 +1,7 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
 import './styles/globals.css';
-import MapInterface from './src/app/components/map-interface';
+import MapInterface from './src/components/map-interface';
 
 // Ensure Google Maps API key is present
 if (!process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY) {
