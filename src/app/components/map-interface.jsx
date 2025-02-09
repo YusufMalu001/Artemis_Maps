@@ -45,7 +45,7 @@ export default function MapInterface() {
             </div>
             <Input
               type="text"
-              placeholder="Search Google Maps"
+              placeholder="Search Maps"
               className="pl-10 pr-16 py-2.5 w-full rounded-lg border shadow-sm"
             />
             <div className="absolute inset-y-0 right-0 flex items-center gap-2 pr-3">
