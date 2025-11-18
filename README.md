@@ -1,105 +1,106 @@
-##Artemis Maps##
+## **Artemis Maps**
 
 A modern map-based interface built with Next.js 14, Google Maps APIs, and a polished UI powered by Radix + Tailwind.
 Artemis Maps helps you visualize geospatial data, explore locations, and build interactive map workflows with ease.
 
-##🚀 Features##
+---
 
-Interactive Google Maps integration (@react-google-maps/api)
+## **🚀 Features**
 
-Smooth UI components powered by Radix Primitives
+* Interactive Google Maps integration (@react-google-maps/api)
+* Smooth UI components powered by Radix Primitives
+* Tailwind CSS styling with animations
+* Light/Dark mode support via next-themes
+* Fast rendering using Next.js App Router
+* Recharts integration for map-related analytics
+* Clean form handling using React Hook Form + Zod
+* Elegant toasts, drawers, dialogs, popovers, tooltips, and more
 
-Tailwind CSS styling with animations
+---
 
-Light/Dark mode support via next-themes
+## **🧰 Tech Stack**
 
-Fast rendering using Next.js App Router
+### **Frontend Framework**
 
-Recharts integration for map-related analytics
+* Next.js 14.2.16
+* React 18
 
-Clean form handling using React Hook Form + Zod
+### **Google Maps / Visualization**
 
-Elegant toasts, drawers, dialogs, popovers, tooltips, and more
+* @react-google-maps/api
+* recharts
 
-🧰 Tech Stack
-Frontend Framework
+### **UI / UX**
 
-Next.js 14.2.16
+* Radix UI (Alerts, Dialogs, Popovers, Menus, Tabs, etc.)
+* lucide-react icons
+* sonner for notifications
+* cmdk for command palette
+* Tailwind CSS + tailwindcss-animate
 
-React 18
+### **Forms & Validation**
 
-Google Maps / Visualization
+* react-hook-form
+* zod
+* @hookform/resolvers
 
-@react-google-maps/api
+### **State & Utility**
 
-recharts
+* clsx / class-variance-authority
+* date-fns
+* tailwind-merge
 
-UI / UX
+### **Dev Tools**
 
-Radix UI (Alerts, Dialogs, Popovers, Menus, Tabs, etc.)
+* TypeScript
+* ESLint + Next.js rules
+* PostCSS + Tailwind
 
-lucide-react icons
+---
 
-sonner for notifications
-
-cmdk for command palette
-
-Tailwind CSS + tailwindcss-animate
-
-Forms & Validation
-
-react-hook-form
-
-zod
-
-@hookform/resolvers
-
-State & Utility
-
-clsx / class-variance-authority
-
-date-fns
-
-tailwind-merge
-
-Dev Tools
-
-TypeScript
-
-ESLint + Next.js rules
-
-PostCSS + Tailwind
-
-📦 Installation
+## **📦 Installation**
 
 Clone the project:
 
+```
 git clone https://github.com/YusufMalu001/Artemis_Maps.git
 cd Artemis_Maps
-
+```
 
 Install dependencies:
 
+```
 npm install
+```
 
-▶️ Running the Project
+---
+
+## **▶️ Running the Project**
 
 Start development server:
 
+```
 npm run dev
+```
 
+The app runs at:
 
-By default the app starts at:
-
+```
 http://localhost:3000
-
+```
 
 Build for production:
 
+```
 npm run build
 npm start
+```
 
-🗂️ Folder Structure
+---
+
+## **🗂️ Folder Structure**
+
+```
 Artemis_Maps/
 │
 ├── app/                 # Next.js app directory (routes, layouts, pages)
@@ -108,22 +109,31 @@ Artemis_Maps/
 ├── styles/              # Global CSS + Tailwind setup
 ├── public/              # Static assets
 └── README.md
-
+```
 
 (Adjust names if your folders differ.)
 
-🗺️ Google Maps API Setup
+---
+
+## **🗺️ Google Maps API Setup**
 
 Create a Google Cloud Maps API key and add it to your environment file:
 
+```
 GOOGLE_MAPS_API_KEY=your_key_here
+```
 
+Use it like:
 
-Then load it in your map component using:
-
+```tsx
 import { GoogleMap, LoadScript } from '@react-google-maps/api';
+```
 
-🧪 Validation (Zod + RHF) Example
+---
+
+## **🧪 Validation (Zod + RHF) Example**
+
+```tsx
 const schema = z.object({
   location: z.string().nonempty(),
 });
@@ -131,30 +141,30 @@ const schema = z.object({
 const form = useForm({
   resolver: zodResolver(schema),
 });
+```
 
-🔥 Future Roadmap
+---
 
-Layer toggling (heatmaps, markers, clusters)
+## **🔥 Future Roadmap**
 
-Search & geocoding
+* Layer toggling (heatmaps, markers, clusters)
+* Search & geocoding
+* User-saved map sessions
+* Data overlays (CSV / GeoJSON importer)
+* Analytics dashboard powered by Recharts
 
-User-saved map sessions
+---
 
-Data overlays (CSV / GeoJSON importer)
+## **🤝 Contributing**
 
-Analytics dashboard powered by Recharts
+* Fork the repo
+* Create your feature branch
+* Commit changes with clear messages
+* Open a pull request
 
-🤝 Contributing
+---
 
-Fork the repo
+## **📩 Contact**
 
-Create your feature branch
-
-Commit changes with clear messages
-
-Open a pull request
-
-📩 Contact
-
-Yusuf Malu Bhai Wala
-GitHub: YusufMalu001
+**Yusuf Malu Bhai Wala**
+GitHub: **YusufMalu001**
