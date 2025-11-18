@@ -1,9 +1,9 @@
-Artemis Maps
+##Artemis Maps##
 
 A modern map-based interface built with Next.js 14, Google Maps APIs, and a polished UI powered by Radix + Tailwind.
 Artemis Maps helps you visualize geospatial data, explore locations, and build interactive map workflows with ease.
 
-🚀 Features
+##🚀 Features##
 
 Interactive Google Maps integration (@react-google-maps/api)
 
